@@ -6,5 +6,5 @@ sudo systemctl enable docker
 
 sudo docker build -t kadam1 /home/ubuntu/app/
 
-sudo docker run -d -p kadam1 80:80 kadam
+sudo docker run -d --name kadam1 -p 80:80 kadam
 docker stop kadam
