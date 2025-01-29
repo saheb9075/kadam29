@@ -4,6 +4,6 @@ sudo apt-get install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
 
-sudo docker build -t kadam /home/ubuntu/app/
+sudo docker build -t kadam1 /home/ubuntu/app/
 
-sudo docker run -d -p 80:80 kadam
+sudo docker run -d -p --name kadam1 80:80 kadam
